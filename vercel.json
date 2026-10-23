@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "outputDirectory": "public",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 308, "headers": { "Location": "https://vientonorte.io/$1" } }
+  ]
+}
